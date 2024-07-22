@@ -1,0 +1,150 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: url('images/background.jpg') no-repeat;
+    background-size: cover;
+}
+input {
+    display: block;
+    height: 40px;
+    width: 320px;
+    background: #01ff01b9;
+    color: white;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button {
+    width: 340px;
+    height: 40px;
+    background: #5a5a5a;
+    color: white;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+
+}
+
+h1,
+label {
+    color: rgb(189, 251, 192);
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas: "headline" "form" "entry";
+    padding: 0 15vh;
+    color: #0a0a0a;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 768px) {
+    #app {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "headline headline" "form entry";
+        height: 100vh;
+    }
+
+}
+
+.infobox {
+    display: flex;
+    align-items: center;
+}
+
+.entry {
+    background: rgba(0, 255, 55, 0.4);
+    grid-area: entry;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
+form {
+    grid-area: form;
+    display: grid;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+#entryHolder {
+    padding: 15px;
+}
+
+#date::before {
+    content: "Date : ";
+}
+
+#temp::before {
+    content: "Temperature : ";
+}
+
+#content::before {
+    content: "You're feeling ";
+}
+
+.headline {
+    display: grid;
+    grid-area: headline;
+    align-self: center;
+    justify-content: center;
+}
+
+.title {
+    display: inline-flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+#generate {
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    font-size: 24px;
+}
+
+
+button.invalid {
+    cursor: not-allowed;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    background: #01ff01b9;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+ 
+}
+
+
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #3e3d3c;
+    font-family: 'Oswald', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
