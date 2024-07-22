@@ -1,9 +1,8 @@
 # Weather Journal App
 
 ## Project 3 - Weather Journal App (Front End Developer Udacity Nanodegree)
-#### Technology used: HTML, CSS, Javascript (Vanilla)
+#### Technology used: HTML, CSS, Javascript
 
-# Weather Journal App
 
 ## Project Objective
 Create a web app that uses the OpenWeatherMap API to get weather based on the user's location and dynamically update the UI.
